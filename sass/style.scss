@@ -1,0 +1,218 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+    border: 1px dotted grey
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+.container {
+    width: 90%;
+    margin: 2% 5%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+
+    a{
+        color: #d05555;
+        
+        &:hover {
+            color: #c61b1b;
+        }
+    } 
+}
+
+#year {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    select {
+        font-size: 60px;
+        width: 260px;
+        padding-left: 60px;
+        border-radius: 15px;
+        border: 1px dotted grey;
+        font-family: "Varela Round", sans-serif;
+
+        option {
+            font-size: 35px;
+        }
+    }
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .month {
+        flex: 0 1 21%;
+        margin-bottom: 3em;
+        &::before {
+            content: "ENERO";
+            display: block;
+            font-weight: bold;
+        }
+        &:nth-child(2)::before {
+            content: "FEBRERO";
+        }
+        &:nth-child(3)::before {
+            content: "MARZO";
+        }
+        &:nth-child(4)::before {
+            content: "ABRIL";
+        }
+        &:nth-child(5)::before {
+            content: "MAYO";
+        }
+        &:nth-child(6)::before {
+            content: "JUNIO";
+        }
+        &:nth-child(7)::before {
+            content: "JULIO";
+        }
+        &:nth-child(8)::before {
+            content: "AGOSTO";
+        }
+        &:nth-child(9)::before {
+            content: "SEPTIEMBRE";
+        }
+        &:nth-child(10)::before {
+            content: "OCTUBRE";
+        }
+        &:nth-child(11)::before {
+            content: "NOVIEMBRE";
+        }
+        &:nth-child(12)::before {
+            content: "DICIEMBRE";
+        }
+        ul {
+            padding: 8px 0;
+            display: flex;
+            &:first-child {
+                margin-bottom: 25px;
+                border-bottom: 3px solid #820101a8;
+            }
+            li {
+                list-style-type: none;
+                //border: 1px solid black;
+                flex: 1 1 0;
+                &.holiday {
+                    color: white;
+                    border-radius: 35px 0px;
+                    font-weight: bold;
+                    background-color: #7c0303;
+                }
+            }
+        }
+    }
+}
+
+#more-years {
+    margin-top: 2em;
+    
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:1920px) {
+    #calendar {
+        font-size: 25px;
+        .month {
+            flex-basis: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #calendar {
+        font-size: 22px;
+        .month {
+            flex-basis: 47%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #calendar {
+        font-size: 20px;
+        .month {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1920px) {
+    #calendar {
+        font-size: 25px;
+        .month {
+            flex-basis: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #calendar {
+        font-size: 22px;
+        .month {
+            flex-basis: 47%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #calendar {
+        font-size: 20px;
+        .month {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1920px) {
+    #calendar {
+        font-size: 25px;
+        .month {
+            flex-basis: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #calendar {
+        font-size: 22px;
+        .month {
+            flex-basis: 47%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #calendar {
+        font-size: 20px;
+        .month {
+            flex-basis: 100%;
+        }
+    }
+}
